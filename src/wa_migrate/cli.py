@@ -65,7 +65,7 @@ def wadecrypt_bin() -> str:
     venv = Path(sys.executable).parent / "wadecrypt"
     found = str(venv) if venv.exists() else shutil.which("wadecrypt")
     if not found:
-        raise Abort("wadecrypt not found. Reinstall with: pipx install wa-migrate")
+        raise Abort("wadecrypt not found. Reinstall wa-migrate (brew reinstall wa-migrate or pipx reinstall wa-migrate)")
     return found
 
 

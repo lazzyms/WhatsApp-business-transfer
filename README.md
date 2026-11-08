@@ -29,10 +29,19 @@ Move your **WhatsApp Business** chat history from an Android phone to an iPhone,
 
 ## Install
 
+Homebrew (recommended):
+
 ```bash
-brew install libimobiledevice
+brew install lazzyms/tap/wa-migrate
 brew install --cask android-platform-tools
 xcode-select --install   # optional, enables the safety validation
+```
+
+Or with pipx:
+
+```bash
+brew install libimobiledevice pipx
+brew install --cask android-platform-tools
 pipx install git+https://github.com/lazzyms/WhatsApp-business-transfer
 ```
 
