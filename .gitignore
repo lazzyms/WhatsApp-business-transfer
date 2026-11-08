@@ -1,0 +1,21 @@
+# Everything the tool produces holds your private messages. Never commit it.
+work/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.crypt15
+*.crypt14
+msgstore.db
+ios_backup/
+android/
+_originals_*/
+key*.txt
+encrypted_backup.key
+
+.venv/
+__pycache__/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.DS_Store
